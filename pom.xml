@@ -5,7 +5,7 @@
     <groupId>org.java-websocket</groupId>
     <artifactId>Java-WebSocket</artifactId>
     <packaging>jar</packaging>
-    <version>1.5.2-SNAPSHOT</version>
+    <version>1.5.3-SNAPSHOT</version>
     <name>Java-WebSocket</name>
     <description>A barebones WebSocket client and server implementation written 100% in Java</description>
     <url>https://github.com/TooTallNate/Java-WebSocket</url>
@@ -27,7 +27,9 @@
         <maven.shade.plugin.version>3.1.0</maven.shade.plugin.version>
         <maven.source.plugin.version>3.0.0</maven.source.plugin.version>
         <nexus.staging.maven.plugin.version>1.6.8</nexus.staging.maven.plugin.version>
-
+        <sonar.projectKey>org.java-websocket:Java-WebSocket</sonar.projectKey>
+        <sonar.organization>marci4-github</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
     <licenses>
         <license>
@@ -224,6 +226,7 @@
                         <configuration>
                             <serverId>ossrh</serverId>
                             <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                         </configuration>
                     </plugin>
                     <plugin>
